@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto 1fr auto auto;
+    grid-gap: 5px;
+    height: 100vh;
+}
+.contenedor > div {
+    padding: 10px;
+    text-align: center;
+}
+.cabecera {
+    grid-column: 1 / -1;
+    background-color: #d4d700;
+}
+.menu {
+    grid-column: 1 / -1;
+    background-color: #c0c0c0;
+}
+.contenido {
+    grid-column: 1 / 2;
+    background-color: #b0e0e6;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+.contenido1, .contenido2 {
+    background-color: #b0e0e6;
+    border: 1px solid #000;
+}
+.publicidad {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    background-color: #c0c0c0;
+}
+.hijo-de {
+    background-color: green;
+    color: white;
+    width: 80%;
+    margin: 10px auto;
+    padding: 5px;
+}
+.pie-de-pagina {
+    grid-column: 1 / -1;
+    background-color: #90ee90;
+}
+.redes {
+    grid-column: 1 / -1;
+    background-color: #add8e6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+.redes > div {
+    background-color: #87ceeb;
+    padding: 5px;
+}
